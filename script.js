@@ -2,6 +2,10 @@
 
 const calculator = () => {
     //temp result for each operation
+    let forDisplay = "";
+    let tempNum = 0;
+    let newNum1 = 0;
+    let newNum2 = 0;
     let result = 0;
     //main operations - add, subtract, multiply, divide
     //add()
@@ -33,10 +37,32 @@ const calculator = () => {
             return "error"
         }
     }
-    
+    const display = () => {
+//not done yet
+        const numbersBtns = document.querySelectorAll(".number");
+        //selects display
+        const display = document.querySelector(".display");
+        //everytime a number is selected the value
+        //gets added to the display
+        numbersBtns.forEach( (numBtn) => {
+            numBtn.addEventListener("click", (e) => {
+                forDisplay += e.target.value;
+                if(forDisplay.length < 10) {
+                display.textContent = forDisplay;
+                tempNum = parseInt(forDisplay);
+                }
+            });
+        });
+  
+    }
+    display()
+    console.log(tempNum)
+        //selects every number
     // return result
 
     //more logic to be done
     
 }
 calculator();
+// const text = document.querySelector(".text");
+// text.textContent = 102012090
