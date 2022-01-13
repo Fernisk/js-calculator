@@ -9,87 +9,29 @@
     <title>Calculator</title>
 </head>
 <body>
-    <main>
-        
-    <!-- calculator container -->
-    <section class="container">
-        <section class="title-container">
-            <h1 class="title">basicCalc</h1>
-        </section>
-        <!-- box -->
-       <section class="text-container">
-            <div class="display">0</div>
-        </section> 
-        <!-- inputs -->
-        <section class="input-container">
-            <div class="column">
-            <div>
-                <input class="number" type="button" value="7">
-            </div>
-            <div>
-                <input  class="number" type="button" value="4">
-            </div>
-            <div>
-                <input class="number" type="button" value="1">
-            </div>
-            <div>
-                <input class="number" type="button" value="0">
-            </div>
-            </div>
-                <div class="column">
-             <div>
-                <input class="number" type="button" value="8">
-            </div>
-            <div>
-                <input class="number" type="button" value="5">
-            </div>
-            <div>
-                <input class="number" type="button" value="2">
-            </div>
-            <div>
-                <input class="dot" type="button" value=".">
-            </div>
-            </div>
-            <div class="column">
-             <div>
-                <input class="number" type="button" value="9">
-            </div>
-            <div>
-                <input class="number" type="button" value="6">
-            </div>
-            <div>
-                <input class="number" type="button" value="3">
-            </div>
-            <div>
-                <input class="minus" type="button" value="+/-">
-            </div>
-            </div>
-            <div class="column">
-             <div>
-                <input class="divideBtn" type="button" value="/">
-            </div>
-            <div>
-                <input class="multiplyBtn" type="button" value="*">
-            </div>
-            <div>
-                <input class="minusBtn" type="button" value="-">
-            </div>
-            <div>
-                <input class="plusBtn" type="button" value="+">
-            </div>
-            </div>
-            <div class="column">
-            <div>
-                <input class="equalsBtn" type="button" value="=">
-            </div>
-            <div>
-                <input class="clearBtn" type="button" value="clear">
-            </div>
-            </div>
-        </section>
-</section>
-
-    </main>
-    
+   <div class="grid">
+       <div class="display">
+           <div class="previous-operand"></div>
+           <div class="current-operand"></div>
+       </div>
+       <button class="span-two">AC</button>
+       <button>DEL</button>
+       <button>/</button>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>*</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>+</button>
+       <button>7</button>
+       <button>8</button>
+       <button>9</button>
+       <button>-</button>
+       <button>.</button>
+       <button>0</button>
+       <button class="span-two">=</button>
+   </div> 
 </body>
 </html>
